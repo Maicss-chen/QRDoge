@@ -1,7 +1,3 @@
-//
-// Created by maicss on 23-10-1.
-//
-
 #ifndef QT_DOG_STRUCTS_H
 #define QT_DOG_STRUCTS_H
 #include "QString"
@@ -32,7 +28,6 @@ struct CodeItem {
     bool operator==(const CodeItem& other) const{
         return text == other.text
                && type == other.type;
-//            && position == other.position;
     }
 
 };

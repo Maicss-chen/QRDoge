@@ -1,7 +1,3 @@
-//
-// Created by maicss on 23-9-30.
-//
-
 #include "QRDoge.h"
 #include "HoverButton.h"
 #include <QApplication>
@@ -16,10 +12,10 @@ QRDoge::QRDoge()
 }
 
 void QRDoge::listen() {
-    dogeThread->start();
+    dogeThread->listen();
 }
 
-void QRDoge::gazeCode(CodeItem code) {
+void QRDoge::gazeCode(const CodeItem& code) {
     HoverButton::pop(QCursor::pos(), code);
 }
 

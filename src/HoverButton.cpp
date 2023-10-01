@@ -1,7 +1,3 @@
-//
-// Created by maicss on 23-9-30.
-//
-
 #include "HoverButton.h"
 #include <QPainter>
 #include <QPainterPath>

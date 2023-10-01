@@ -1,7 +1,3 @@
-//
-// Created by maicss on 23-9-30.
-//
-
 #ifndef QT_DOG_QRDOGE_H
 #define QT_DOG_QRDOGE_H
 
@@ -21,7 +17,7 @@ public:
 protected:
 
 private slots:
-    void gazeCode(CodeItem code);
+    void gazeCode(const CodeItem& code);
     void gazeCodeLost();
 private:
     DogeThread* dogeThread;

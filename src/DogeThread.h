@@ -1,7 +1,3 @@
-//
-// Created by maicss on 23-10-1.
-//
-
 #ifndef QT_DOG_DOGETHREAD_H
 #define QT_DOG_DOGETHREAD_H
 #include <QThread>

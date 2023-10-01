@@ -1,7 +1,3 @@
-//
-// Created by maicss on 23-10-1.
-//
-
 #include "DogeThread.h"
 #include "QCursor"
 #include "QApplication"
@@ -74,7 +70,7 @@ QList<CodeItem> DogeThread::scan() {
     QList<CodeItem> res;
     auto screens = QApplication::screens();
     if (screens.empty()) {
-//        qDebug()<<"No screens were found!";
+        qDebug()<<"No screens were found!";
         return res;
     }
 
@@ -120,6 +116,7 @@ QList<CodeItem> DogeThread::scan() {
             c_item.position.topRight = QPoint(item.position().topRight().x(), item.position().topRight().y());
             c_item.position.bottomLeft = QPoint(item.position().bottomLeft().x(), item.position().bottomLeft().y());
             c_item.position.bottomRight = QPoint(item.position().bottomRight().x(), item.position().bottomRight().y());
+            c_item.screen = screen;
             res.append(c_item);
         }
     }
